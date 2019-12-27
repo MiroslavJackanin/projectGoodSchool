@@ -1,13 +1,13 @@
 package sk.itsovy.jackanin.goodSchool;
 
 public class Student extends Person {
-    private int g_Mat;
-    private int g_Eng;
-    private int g_Inf;
+    private byte g_Mat;
+    private byte g_Eng;
+    private byte g_Inf;
     private int absence;
 
     //CONSTRUCTOR
-    public Student(String firstName, String lastName, int g_Mat, int g_Eng, int g_Inf, int absence) {
+    public Student(String firstName, String lastName, byte g_Mat, byte g_Eng, byte g_Inf, int absence) {
         super(firstName, lastName);
         this.g_Mat = g_Mat;
         this.g_Eng = g_Eng;
@@ -16,13 +16,13 @@ public class Student extends Person {
     }
 
     //GETTER
-    public int getG_Mat() {
+    public byte getG_Mat() {
         return g_Mat;
     }
-    public int getG_Eng() {
+    public byte getG_Eng() {
         return g_Eng;
     }
-    public int getG_Inf() {
+    public byte getG_Inf() {
         return g_Inf;
     }
 
