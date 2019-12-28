@@ -1,4 +1,5 @@
 package sk.itsovy.jackanin.goodSchool;
+import java.util.ArrayList;
 import java.util.List;
 
 public class School implements SchoolStat{
@@ -7,11 +8,12 @@ public class School implements SchoolStat{
 
     //CONSTRUCTOR
     public School(){
-
+        list = new ArrayList<>();
     }
 
     //METHOD
     public void addStudent(Student student){
+        list.add(student);
         count++;
     }
     public int getCount(){
