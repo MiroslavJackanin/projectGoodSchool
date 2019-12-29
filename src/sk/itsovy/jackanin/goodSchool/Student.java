@@ -28,9 +28,17 @@ public class Student extends Person {
 
     //METHOD
     protected double getAverageGrade(){
-        return -1;
+        return (double)(g_Eng+g_Inf+g_Mat)/3;
     }
     public int getAbsence(){
         return absence;
+    }
+    @Override
+    public String toString(){
+        return  "Name: " + getFullName() +
+                ", Mat: " + getG_Mat() +
+                ", Eng: " + getG_Eng() +
+                ", Inf: " + getG_Inf() +
+                ", Abs: " + getAbsence();
     }
 }

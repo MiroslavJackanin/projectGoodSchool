@@ -30,5 +30,15 @@ public class Main {
         }catch (Exception e){
             e.printStackTrace();
         }
+
+        //METHOD TESTING
+        school.getList();
+        System.out.println("Best student: " + school.getTheBestStudent());
+        System.out.println("Average absence: " + school.getAverageAbsence());
+        System.out.println("Average grade: " + school.getAverageGrade());
+        System.out.println("Average grade from Math: " + school.getAverageGradeFromMath());
+        System.out.println("The worst student: " + school.getTheWorstStudent());
+        System.out.println("Lowest absence: " + school.getTheLowestAbsence());
+
     }
 }
